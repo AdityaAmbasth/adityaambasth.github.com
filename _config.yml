@@ -11,21 +11,21 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://username.github.io/
+url: http://www.adityaambasth.in #http://localhost:3000 
 baseurl: /
 title: Aditya Ambasth
 author: Aditya Ambasth
 description: Personal blog and resume
 avatar: profile.png
 email: aditya.ada@hotmail.com
-github: biomadeira/sustain # username
-twitter: username
-linkedin: username
+github: https://github.com/AdityaAmbasth # username
+twitter: https://twitter.com/Aditya_Ada
+linkedin: https://in.linkedin.com/in/ambasthaditya
 stackoverflow: username   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus 
-disqus: username
+disqus: aditya_ambasth
 google_analytics: UA-69391421-1
-
+comment : true
 
 # needed for travis-ci build
 exclude: [vendor]
