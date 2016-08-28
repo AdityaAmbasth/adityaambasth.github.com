@@ -15,13 +15,13 @@ url: http://www.adityaambasth.in #http://localhost:3000
 baseurl: /
 title: Aditya Ambasth
 author: Aditya Ambasth
-description: Personal blog and resume
+description: Aditya Ambasth is an innovator | Developer | traveler | food enthusiast | mentor | Orator ; who wishes to fly combat jets and fathoms on human psychology. You may reach him on email at aditya.ada@hotmail.com or Twitter https://twitter.com/Aditya_Ada
 avatar: profile.png
 email: aditya.ada@hotmail.com
 github: AdityaAmbasth # username
 twitter: Aditya_Ada
 linkedin: https://in.linkedin.com/in/ambasthaditya
-youtube : /channel/UCQJr7YGI_e8lzhLjsroFVDQ  #e.g: users/2735833/proton1h1
+youtube : UCQJr7YGI_e8lzhLjsroFVDQ  #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus 
 disqus: aditya_ambasth
 google_analytics: UA-69391421-1
