@@ -1,0 +1,72 @@
+---
+layout: home
+---
+<style type="text/css">
+footer, .footer{
+	display: none;
+}
+#wrap{
+	height:  100%;
+}
+html, body{
+	
+}
+.social{
+	position: relative;
+	padding: 0;
+	top: -20px;
+}
+.hash_tags{
+	    letter-spacing: 1px;
+    font-size: 1.1em;
+    word-spacing: 15px;
+    color: black;
+}
+	.main_about, .full_row{
+		width: 100%;
+		height: 100%;
+	}
+	.img_me{
+	    background-image: url('/assets/images/contact.jpg');
+	    height: 77%;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    margin-top: 50px;
+	    display: block;
+	    margin-left: 25%;
+	    margin-right: 25%;
+	    -webkit-border-radius: 58px;
+	    -moz-border-radius: 58px;
+	}
+	.about_content{
+		    font-size: 1.1em;
+    color: rgba(0,0,0,.5);
+    word-spacing: 5px;
+	}
+
+
+</style>
+<div class="main_about container-fluid">
+<div class="row full_row">
+<div class="col-lg-6" style="height: 100%;">
+<div class="img_me">
+</div>
+</div>
+<div class="col-lg-6" style="padding-top: 30px;">
+<p class="about_content">
+	If you are in the academic world, you can write to me at <strong>aditya_kaushal[at]srmuniv.edu.in</strong>
+</p>
+<p class="about_content">
+If you are a head-hunter, you should first check out my linkedin profile at <a target="_blank" href="https://in.linkedin.com/in/ambasthaditya"><img style="display: inline-block;width: 115px;" src="{{ site.baseurl }}assets/images/linkedin.png" /></a> 
+</p>
+<p class="about_content"> 
+If you are not any of these you can get in touch at <strong>aditya.ada[at]hotmail.com</strong>
+</p>
+<p style="margin: 0;" class="about_content">
+Or shoot a direct message :
+<iframe style="width: 100%;height: 415px; border: 0;" class="embed-responsive-item" src="https://thawing-sands-48835.herokuapp.com/forms/new"></iframe>
+</p>
+{% include social.html %}
+</div>
+</div>
+</div>
