@@ -1,0 +1,129 @@
+---
+layout: home
+---
+<style type="text/css">
+	.publication_thumb{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    height: 200px;
+	}
+	.publication_title{
+	    text-align: left;
+	}
+	.publication_abstract{
+		    text-align: justify;
+		    word-spacing: 5px;
+	}
+	.publication_abstract_footer{
+		text-align: left;
+	}
+	.span_cite{
+		    float: right;
+		    margin-right: 20px;
+	}
+	.abstract_word{
+		    text-align: left;
+		    font-weight: 600;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.publication_cite').on('click',function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			$('#cite_modal').find('.modal-body').html('');
+			var cite_text = $(this).parent().find('.cite_text').html();
+			$('#cite_modal').find('.modal-body').html(cite_text);
+			$('#cite_modal').modal('toggle');
+
+
+			return false;
+		})
+	});
+</script>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+			<img class="publication_thumb" src="{{ site.baseurl }}assets/images/gesture_thumb.jpg" />
+		</div>
+		<div class="col-lg-8">
+		<h3 class="publication_title">Gesture conversion to speech: A Communication Module for speech impaired</h3>
+		<h4 class="abstract_word">Abstract</h4>
+		<p class="publication_abstract">
+			About 8% of India’s population is multiply disabled of which major sections constitute of women due to lower literacy rate, social factors and lower grade health facilities. In this paper we review a few existing models to aid people with speech disability. Further we explore a novel approach based on gesture recognition to mitigate few shortcomings described above. Finally we give a solution which will address most of the problems enumerated in this paper to help the speech disabled people living in developing nations to uplift their daily living and also become economically independent which would in turn help the overall development of the nation.
+			<p class="publication_abstract_footer">
+				<a target="_blank" href="http://www.serialsjournals.com/serialjournalmanager/pdf/1475052199.pdf"><img src="{{ site.baseurl }}assets/images/adobe.png"> Download PDF</a>
+				<span class='span_cite'><a href="" class="publication_cite">Cite</a><span class = 'cite_text hide'>Khushboo Agarwal, Aditya, Anshul Nalin, Jaspreet Singh Riar and Sabitha Gauni. “Gesture Conversion to Speech: A Communication Module for the Speech Impaired”.International Journal of Control Theory and Application (IJCTA), 9(15), 2016, pp. 7027-7033.ISSN : 0974-5572.http://www.serialsjournals.com. Published by International Science Press.</span></span>
+				
+			</p>
+		</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<img class="publication_thumb" src="{{ site.baseurl }}assets/images/lifi_thumb.jpg" />
+		</div>
+		<div class="col-lg-8">
+		<h3 class="publication_title">Li-fi based data storage device</h3>
+		<h4 class="abstract_word">Abstract</h4>
+		<p class="publication_abstract">
+			We here intend to develop an external portable wireless data storage hard-drive as an interfacing device with other secondary storage present in laptop or desktop. Thereby attaining lightning fast data transfer at speeds, when compared to present day external hard drives. Using fast switching LED’s to transfer electronic data that can be written wirelessly, instead of trivial electronically transferred files through low speed existing wireless standards such as Wi-Fi, Bluetooth etc. 
+			<p class="publication_abstract_footer">
+				<a target="_blank" href="http://www.ijcstjournal.org/volume-4/issue-4/IJCST-V4I4P42.pdf"><img src="{{ site.baseurl }}assets/images/adobe.png"> Download PDF</a>
+				<span class='span_cite'><a href="" class="publication_cite">Cite</a><span class = 'cite_text hide'>Mohammed Zafar Faraz, Aditya Ambasth . "LI-FI Based Data Storage Device". International Journal of Computer Science Trends and Technology (IJCST) V4(4): Page(261-265) July-Aug 2016. ISSN: 2347-8578. www.ijcstjournal.org.Published by Eighth Sense Research Group.</span></span>
+				
+			</p>
+		</p>
+		</div>
+	</div>
+		<div class="row">
+		<div class="col-lg-4">
+			<img class="publication_thumb" src="{{ site.baseurl }}assets/images/smart_thumb.jpg" />
+		</div>
+		<div class="col-lg-8">
+		<h3 class="publication_title">Smart Shopping Cart: A novel approach in Supermarket Shopping</h3>
+		<h4 class="abstract_word">Abstract</h4>
+		<p class="publication_abstract">
+			 In this paper we describe a novel approach to
+			shopping using the classic shopping cart with few modifications
+			to the same. The need for a new approach arises from the
+			dissatisfaction of customers due to cumbersome experience
+			during shopping. Shopping in supermarket can be eased by using
+			a smart device with front camera attached to the cart to read the
+			barcode of the product. To ensure security and reliability, a few
+			modifications have been introduced to the cart and a recharge
+			system for the payment has been proposed. A Java based
+			application was developed to test the proposed method and cart
+			modeling was done incorporating the changes. This method
+			proves to provide a better shopping experience to the user and
+			also increase productivity and profitability at the supermarket. 
+			<p class="publication_abstract_footer">
+				<a target="_blank" href="https://drive.google.com/file/d/0B81YygKM3Tz8ell2ZWxFM0RBekU/view"><img src="{{ site.baseurl }}assets/images/adobe.png"> Download PDF</a>
+				<span class='span_cite'><a href="" class="publication_cite">Cite</a><span class = 'cite_text hide'>Aditya Ambasth, Khushboo Agarwal. Published in Conference Proceeding of 2015 IEEE International WIE Conference on Electrical and Computer Engineering (WIECON-ECE 2015), Dhaka, Bangladesh page no.(293-296).</span></span>
+				
+			</p>
+		</p>
+		</div>
+	</div>
+</div>
+
+
+<div id="cite_modal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Cite publication</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
