@@ -85,14 +85,19 @@ layout: home
 			e.preventDefault();
 			e.stopPropagation();
 			$(this).hide();
-			$(this).parent().parent().find('.second_para').attr("style", 'height: 100%; overflow:auto;');
+			var dom = $(this).parent().parent().find('.second_para');
+			dom.attr('style','overflow:auto;');
+			dom.animate({ "height": $(this).parent().height() }, "slow" );
 			return false;
 		});
 		$('.read_less').on('click', function(e){
 			e.preventDefault();
 			e.stopPropagation();
 			$(this).parent().parent().find('.first_para').find('.read_more').show();
-			$(this).parent().attr("style", 'height: 0; overflow:hidden;');
+			
+			$(this).parent().animate({"height": 0}, "slow", function(){
+				$(this).attr("style", 'overflow:hidden;');
+			});
 			return false;
 		});
 	});
