@@ -2,6 +2,34 @@
 layout: home
 ---
 <style type="text/css">
+.side_img{
+		border-radius: 50%;
+		    width: 65%;
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+	}
+	.social{
+		text-align: center;
+	}
+	.bordered_col{
+		    border-style: solid;
+		    border-width: 1px;
+		    border-color: rgba(169, 169, 169, 0.39);
+	}
+	.row_head{
+		    display: inline-block;
+		    font-size: 1.4em;
+		    text-transform: uppercase;
+		    color: white;
+		    background-color: rgba(51, 51, 51, 0.77);
+		    padding-left: 7px;
+		    padding-right: 7px;
+		    margin-bottom: 25px;
+		    letter-spacing: 2px;
+	        position: relative;
+		    left: -10px;
+	}
 	.publication_thumb{
 		display: block;
 	    margin-left: auto;
@@ -69,7 +97,19 @@ layout: home
 		});
 	});
 </script>
-<div class="container">
+<div class="container-fluid" style="padding: 40px;" >
+	<div class="row">
+		<div class="col-lg-3">
+			<img class="img img-responsive side_img" src="{{ site.baseurl }}static/img/profile.png" />
+			<h3 style="text-align: center;">Aditya Ambasth</h3>
+			{% include social.html %}
+		</div>
+		<div class="col-lg-9 bordered_col">
+			<div class="row">
+
+				<span class="row_head">Publications</span>
+				<p>
+					<div class="container">
 	<div class="row">
 		<div class="col-lg-4">
 		<a target="_blank" href="http://www.serialsjournals.com/serialjournalmanager/pdf/1475052199.pdf">
@@ -162,6 +202,14 @@ layout: home
 	</div>
 </div>
 
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ss
 
 <div id="cite_modal" class="modal fade">
   <div class="modal-dialog" role="document">
