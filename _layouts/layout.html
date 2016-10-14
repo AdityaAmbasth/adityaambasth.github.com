@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta name="google-site-verification" content="W_RtckRNta5UgIs9xVKSlpJ34pl5EmUQJTm7h0bckbA" />
+    <meta property="og:url" content="https://www.adityaambasth.in" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,12 +25,39 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
     {% if page.title %}
       <title>{{ page.title }}</title>
     {% else %}
       <title>{{ site.title }}</title>
     {% endif %}
-	
+
+#twitter
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@site_username">
+<meta name="twitter:creator" content="@creator_username">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+{% else %}
+  <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/logo.png">
+{% endif %}
+
+
+
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="

@@ -25,8 +25,9 @@ linkedin: https://in.linkedin.com/in/ambasthaditya
 youtube : UCQJr7YGI_e8lzhLjsroFVDQ  #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus 
 disqus: aditya_ambasth
-google_analytics: UA-69391421-1
+google_analytics: UA-85730727-1
 comment : true
 
 # needed for travis-ci build
 exclude: [vendor]
+
