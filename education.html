@@ -1,0 +1,156 @@
+---
+layout: home
+---
+<style type="text/css">
+	
+	.side_img{
+		border-radius: 50%;
+		    width: 65%;
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+	}
+	.social{
+		text-align: center;
+	}
+	.bordered_col{
+		    border-style: solid;
+		    border-width: 1px;
+		    border-color: rgba(169, 169, 169, 0.39);
+	}
+	.row_head{
+		    display: inline-block;
+		    font-size: 1.4em;
+		    text-transform: uppercase;
+		    color: white;
+		    background-color: rgba(51, 51, 51, 0.77);
+		    padding-left: 7px;
+		    padding-right: 7px;
+		    margin-bottom: 25px;
+		    letter-spacing: 2px;
+	        position: relative;
+		    left: -10px;
+	}
+	.school_ul{
+		list-style: none;
+	}
+	.head_year{
+		    font-size: 0.8em;
+		    font-weight: 500;
+		    padding-left: 15px;
+		    float: right;
+		    padding-right: 50px;
+	}
+	.head_item{
+		    font-size: 1.2em;
+		    font-weight: 600;
+		    letter-spacing: 0.5px;
+	}
+	.course_type{
+		font-size: 1.3em;
+	    font-weight: 400;
+	}
+
+</style>
+<div class="container-fluid" style="padding: 40px;" >
+	<div class="row">
+		<div class="col-lg-3">
+			<img class="img img-responsive side_img" src="{{ site.baseurl }}static/img/profile.png" />
+			<h3 style="text-align: center;">Aditya Ambasth</h3>
+			{% include social.html %}
+		</div>
+		<div class="col-lg-9 bordered_col">
+			<div class="row">
+
+				<span class="row_head">Scholastic Record</span>
+				<p>
+					<ul class="school_ul">
+						<li class="course_type">Undergraduate</li>
+						<li class="head_item">B-Tech in Computer Science & Engineering
+SRM University, Chennai <span class='head_year'>2013-2017(expected)</span></li>
+						<li>CGPA: 8.1/10 - upto 6<sup>th</sup> Semester </li>
+					</ul>
+					<ul class="school_ul">
+						<li class="course_type">Higher Secondary Education (CBSE)</li>
+						<li class="head_item">Jawahar Vidya Mandir, Shyamali, Ranchi<span class='head_year'>2010-2012</span></li>
+						<li>All India Senior School Certificate Examination (AISSCE): 85.8%</li>
+					</ul>
+					<ul class="school_ul">
+						<li class="course_type">Secondary Education (ICSE)</li>
+						<li class="head_item">St. Anthony’s School, Ranchi<span class='head_year'>2009-2010</span></li>
+						<li>Indian Certificate for Secondary Education: 86.4%</li>
+					</ul>
+				</p>
+			</div>
+			<div class="row">
+				<span class="row_head">coursework</span>
+				<p>
+					<div class="row">
+						<div class="col-lg-4">
+						<ul class="school_ul">
+						<li>Natural Language Processing</li>
+						<li>Text Mining</li>
+						<li>Computational Linguistics</li>
+						<li>Artificial Intelligence </li>
+						<li>Data Structures and Algorithms</li>
+						<li>Probability and Queuing Theory</li>
+						<li>Statistical and Numerical Methods</li>
+						</ul>
+						</div>
+						<div class="col-lg-4">
+						<ul class="school_ul">
+						<li>Object Oriented Analysis Design</li>
+						<li>Database Management System</li>
+						<li>Software Engineering</li>
+						<li>Data Warehousing</li>
+						<li>Database security and privacy</li>
+						</ul>
+						</div>
+						<div class="col-lg-4">
+						<ul class="school_ul">
+						<li>Operating System</li>
+						<li>Computer Networks</li>
+						<li>Theory of Computation</li>
+						<li>System Software and Compiler Design</li>
+						</ul>
+						</div>
+					</div>
+				</p>
+			</div>
+			<div class="row">
+				<span class="row_head">independent coursework</span>
+				<p>
+					<ul class="school_ul">
+						<li>Machine Learning-Andrews Ng (YouTube Videos)</li>
+					</ul>
+				</p>
+			</div>
+			<div class="row">
+				<span class="row_head">certification</span>
+				<p>
+					<ul class="school_ul">
+						<li class="head_item">Information Security-1</li>
+						<li>NPTEL (National Programme on Technology Enhanced Learning)</li>
+						<li>Guide - Prof Dr.V.Kamakoti, IIT Madras</li>
+					</ul>
+				</p>
+			</div>
+			<div class="row">
+				<span class="row_head">volunteer</span>
+				<p>
+					<ul class="school_ul">
+						<li class="head_item">IEEE Student Member</li>
+						<li>Chennai Area (R-10)</li>
+					</ul>
+				</p>
+			</div>
+			<div class="container" style="font-size: 1.2em;">
+			<div class="row">
+				<div class="col-lg-12">
+				To view my projects click <strong><a href="{{ site.baseurl }}projects.html">here</a></strong>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
