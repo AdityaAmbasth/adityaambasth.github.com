@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.adityaambasth.in/sitemap.xml
+Sitemap: http://adityaambasth.in/sitemap.xml
