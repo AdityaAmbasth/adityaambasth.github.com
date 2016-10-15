@@ -2,25 +2,64 @@
 layout: home
 ---
 <style type="text/css">
-footer, .footer{
-	display: none;
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        .img_me{
+		    background-repeat: no-repeat !important;
+		    background-size: contain !important;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    	.img_me{
+		    background-repeat: no-repeat !important;
+		    background-size: contain !important;
+		}
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    	.img_me{
+		    background-repeat: no-repeat !important;
+		    background-size: cover !important;
+		}
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    	.img_me{
+		    background-repeat: no-repeat !important;
+		    background-size: cover !important;
+		}
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    	.img_me{
+		    background-repeat: no-repeat !important;
+		    background-size: cover !important;
+		}
+    }
+
+#top_nav{
+	height: 5% !important;
 }
 #wrap{
-	height:  100%;
-}
-html, body{
-	max-height: 100% !important;
-	overflow: hidden;
 }
 .hash_tags{
-	    letter-spacing: 1px;
+	letter-spacing: 1px;
     font-size: 1.1em;
     word-spacing: 15px;
     color: black;
 }
 	.main_about, .full_row{
 		width: 100%;
-		height: 100%;
+		height: 95%;
+		padding: 0;
 	}
 	.img_me{
 		background-image: url('/assets/images/me.jpg');
@@ -33,35 +72,38 @@ html, body{
     color: rgba(0,0,0,.5);
     word-spacing: 5px;
 	}
+	.match-my-cols{
+		margin: 0;
+		padding: 0;
+	}
 
 
 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).on('resize', function(){
+			$('.img_me').height($('.no_img').height());
+		});
+		$('.img_me').height($('.no_img').height());
+	});
+</script>
 <div class="main_about container-fluid">
-<div class="row full_row">
-<div class="col-lg-6 img_me">
-</div>
-<div class="col-lg-6" style="
-    padding-left: 45px;
-">
-  <h3 style="
-    font-weight: 600;
-    text-transform: uppercase;
-    word-spacing: 0.3em;
-    letter-spacing: 4px;
-">Aditya Ambasth</h3>
-<h4 style="
-    font-weight: 500;
-">Student in Chennai, India</h4>
-<p class="about_content">
-	Back in the year of 2k, when desktop computer was making its way in our society. I was fortunate to get my hands on the Pentium-4 version of it. Thanks to my tech savvy father for his knack of lore towards this magical instrument. Tunneling almost 16 years from then, I shall be completing my undergraduate  in Computer Science and engg and realizing my childhood dream.d.
-</p>
-<p class="about_content">
-During my undergrad, I picked academic courses related to Computer Networks, Operating system, Software development and many others. Where, I started researching and getting my hands-on, on variety of new tools through group and individual projects. Somehow, Natural Language Processing and Information retrieval web systems proved to be more intriguing to me. It opened the doors to assistive technologies, linguistic challenges, data corpuses, on one hand.Sequentially, giving the insights of building Search Engines and its multifactor components, on the other. Working on large data sets became fun and equally challenging. To know more, read through my experience section.
-</p>
-<div class="hash_tags">
-#technology #reading #programming #education #travel
-</div>
-{% include social.html %}
-</div>
-</div>
+	<div class="row match-my-cols full_row">
+		<div class="col-lg-6 img_me">
+		</div>
+		<div class="col-lg-6 no_img">
+		  <h3 style="font-weight: 600;text-transform: uppercase;word-spacing: 0.3em;letter-spacing: 4px;">Aditya Ambasth</h3>
+			<h4 style="font-weight: 500;">Student in Chennai, India</h4>
+			<p class="about_content">
+				Back in the year of 2k, when desktop computer was making its way in our society. I was fortunate to get my hands on the Pentium-4 version of it. Thanks to my tech savvy father for his knack of lore towards this magical instrument. Tunneling almost 16 years from then, I shall be completing my undergraduate  in Computer Science and engg and realizing my childhood dream.d.
+			</p>
+			<p class="about_content">
+			During my undergrad, I picked academic courses related to Computer Networks, Operating system, Software development and many others. Where, I started researching and getting my hands-on, on variety of new tools through group and individual projects. Somehow, Natural Language Processing and Information retrieval web systems proved to be more intriguing to me. It opened the doors to assistive technologies, linguistic challenges, data corpuses, on one hand.Sequentially, giving the insights of building Search Engines and its multifactor components, on the other. Working on large data sets became fun and equally challenging. To know more, read through my experience section.
+			</p>
+			<div class="hash_tags">
+			#technology #reading #programming #education #travel
+			</div>
+			{% include social.html %}
+		</div>
+	</div>
 </div>
